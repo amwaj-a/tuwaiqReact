@@ -1,6 +1,6 @@
 import React from 'react'
 import Button from './Button'
-import { useState } from 'react';
+// import { useState } from 'react';
 
 function Crad(props) {
 
@@ -8,25 +8,23 @@ function Crad(props) {
     new Date().getFullYear()>props.date.slice(6)?
 
     'gray': ( props.title=='لقاء')?
-     '#B787F5':(props.title=='معسكر')?
-       '#ABADF0':(props.title=='برنامج')?
-         '#A1D6DA': ' gray'
-    const [hover, setHover] = useState(false);
-    let style={
-        transform: 
-        new Date().getFullYear()>props.date.slice(6)?
-        'scale(1)':       
+     'B787F5':(props.title=='معسكر')?
+       'ABADF0':(props.title=='برنامج')?
+         'A1D6DA': ' gray'
+    // const [hover, setHover] = useState(false);
+    // let style={
+    //     transform: 
+    //     new Date().getFullYear()>props.date.slice(6)?
+    //     'scale(1)':       
         
-        hover?'scale(1.05)':'scale(1)',
-        transition:hover?'0.1s':'0',
+    //     hover?'scale(1.05)':'scale(1)',
+    //     transition:hover?'0.1s':'0',
      
-        borderRight: `15px solid ${color}`
-    }
+    //     borderRight: `15px solid ${color}`
+    // }
   return (
-    <div className="card" style={style} onMouseEnter={()=>{
-        setHover(true)
-    }} onMouseLeave={()=> setHover(false)}>
-    <div className="borderRight" >
+    <div className='card '   id={color}>
+    <div className="borderRight">
      
      
     <span style={{color:color}}>{props.title}

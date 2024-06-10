@@ -34,7 +34,7 @@ function Home() {
 </section>
 <div>
     <br />
-    <Button id={'borferBut'} text={'تحميل المزيد'} />
+    <Button id={'borderBut'} text={'تحميل المزيد'} />
 
 </div>
 <Login/>
